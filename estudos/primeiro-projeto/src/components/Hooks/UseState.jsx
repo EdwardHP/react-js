@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import studyStyle from '../studyStyle.module.css'
 
 function UseState() {
@@ -11,12 +11,14 @@ function UseState() {
 
     return (
         <section className={studyStyle.paper}>
-            <h1 className={studyStyle.title1}>Contador com useState</h1>
-            <h2 style={{ textAlign: 'center', fontSize: '3em', marginBottom: '10px' }} >{counter}</h2>
-            <button className={studyStyle.comumButton} onClick={() => setCounter(counter+1)}>+</button>
-            <h1 className={studyStyle.title1}>Contador sem useState</h1>
-            <h2 style={{ textAlign: 'center', fontSize: '3em', marginBottom: '10px' }} >{counterB}</h2>
-            <button className={studyStyle.comumButton} onClick={() => counterB++}>+</button>
+            <div className={studyStyle.exampleBox}>
+                <h2 className={studyStyle.title2}>Contador com useState</h2>
+                <span style={{ display: 'block', textAlign: 'center', fontSize: '3em', marginBottom: '10px' }} >{counter}</span>
+                <button className={studyStyle.commomButton} onClick={() => setCounter(counter + 1)}>+</button>
+                <h2 className={studyStyle.title2}>Contador sem useState</h2>
+                <span style={{ display: 'block', textAlign: 'center', fontSize: '3em', marginBottom: '10px' }} >{counterB}</span>
+                <button className={studyStyle.commomButton} onClick={() => counterB++}>+</button>
+            </div>
         </section>
     )
 
