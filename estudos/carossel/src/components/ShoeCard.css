@@ -1,0 +1,54 @@
+:root {
+    --color0: #E21A67;
+    --color1: #05AFF2;
+    --color2: #0378A6;
+    --color3: #F27B35;
+}
+
+.shoeCard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 210px;
+    height: 310px;
+    padding: 20px;
+    border-radius: 20px;
+    flex: none;
+
+    background-color: white;
+}
+
+.shoeCard img {
+    width: 175px;
+}
+
+.shoeInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.shoeInfo h2 {
+    text-align: center;
+}
+
+.oldPrice {
+    font-size: 1.1em;
+    text-decoration: line-through;
+
+    color: var(--color0);
+}
+
+.currentPrice {
+    font-size: 1.25em;
+    padding: 5px;
+    width: 160px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+
+    background-color: var(--color3);
+    color: white;
+}

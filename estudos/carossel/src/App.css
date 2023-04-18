@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#logo {
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    width: 80%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.left, .right {
+    cursor: pointer;
+}
+
+.left {
+    rotate: 180deg;
+}
