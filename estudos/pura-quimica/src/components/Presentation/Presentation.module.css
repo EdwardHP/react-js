@@ -1,0 +1,35 @@
+@import '../../App.css';
+
+.presentation section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px 0px;
+    padding: 20px;
+}
+
+.presentation h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.presentation p {
+    max-width: 600px;
+    font-family: var(--main-font);
+    font-size: 1.25em;
+}
+
+.presentation img {
+    max-width: 375px;
+}
+
+.container {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.timer {
+    color: var(--color4);
+}

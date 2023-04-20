@@ -1,0 +1,22 @@
+.periodicTable {
+    margin-top: 135px;
+}
+
+.periodicTable h2 {
+    text-align: center;
+    font-size: 2em;
+
+    color: var(--color4);
+}
+
+.periodicTable main {
+    background-color: black;
+}
+
+.container {
+    
+}
+
+.container img {
+    max-width: 600px;
+}

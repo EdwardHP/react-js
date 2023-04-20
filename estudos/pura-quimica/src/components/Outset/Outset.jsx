@@ -8,8 +8,8 @@ function Outset() {
             <h1 className={style.presentationTitle}>Faça seus experimentos</h1>
             <section className={style.container}>
                 <picture>
-                    <source media="(max-width: 640px)" srcSet="./images/outset/content1-s.png" />
-                    <img src="./images/outset/content1-l.png" alt="líquido azul" />
+                    <source media="(max-width: 640px)" srcSet="./images/homePag/content1-s.png" />
+                    <img src="./images/homePag/content1-l.png" alt="líquido azul" />
                 </picture>
                 <article>
                     <h2>Sobre nós:</h2>

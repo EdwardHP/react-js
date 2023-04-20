@@ -1,8 +1,14 @@
+import LabHeader from "../../components/LabHeader/LabHeader"
+import PeriodicTable from "../../components/PeriodicTable/PeriodicTable"
+import Presentation from "../../components/Presentation/Presentation"
+
 function Lab() {
   return (
-    <div>
-      
-    </div>
+    <section>
+      <LabHeader />
+      <Presentation />
+      <PeriodicTable />
+    </section>
   )
 }
 
