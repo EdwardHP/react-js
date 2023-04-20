@@ -67,14 +67,14 @@
     .container {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+    }
+
+    .container picture {
+        text-align: center;
     }
 
     .container img {
-        max-height: 400px;
-        max-width: 400px;
-    }
-
-    .container article {
-        max-width: 400px;
+        max-width: 100%;
     }
 }

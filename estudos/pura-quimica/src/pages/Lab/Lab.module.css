@@ -1,0 +1,5 @@
+@import '../../App.css';
+
+.cover {
+    min-height: 100vh;
+}

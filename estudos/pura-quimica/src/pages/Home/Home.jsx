@@ -1,5 +1,5 @@
 import Header from '../../components/Header/Header.jsx'
-import Outset from '../../components/OutSet/Outset.jsx'
+import Outset from '../../components/Outset/Outset.jsx'
 import style from './Home.module.css'
 
 function Center() {

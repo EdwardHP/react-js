@@ -4,11 +4,11 @@ import style from './Outset.module.css'
 function Outset() {
 
     return (
-        <main className={style.Outset}>
+        <main className={style.outset}>
             <h1 className={style.presentationTitle}>Faça seus experimentos</h1>
             <section className={style.container}>
                 <picture>
-                    <source media="(max-width: 640px)" srcSet="./images/homePag/content1-s.png" />
+                    <source media="(max-width: 640px)" srcSet="./images/homePag/content1-s.png" className={style.imageS}/>
                     <img src="./images/homePag/content1-l.png" alt="líquido azul" />
                 </picture>
                 <article>
