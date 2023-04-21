@@ -1,34 +1,38 @@
 import { useState, useEffect, useRef } from 'react'
 import { FiSearch } from 'react-icons/fi'
+import React from 'react'
 import Element from '../Element/Element'
 import style from './PeriodicTable.module.css'
 
 function PeriodicTable() {
 
     const [data, setData] = useState(null);
+    const [tableElement, setTableElement] = useState(null);
+
     const input = useRef(null);
     const elementArea = useRef(null);
 
     const fetchElement = (event) => {
         event.preventDefault();
-        if (data == null || input.current.value.length < 2) return;
+        if (data == null) return;
         const value = capatalize(input.current.value);
+        input.current.value = '';
         data.map((element) => {
-            if (value == element.name) {
-                console.log('achou');
+            if (value == element.name || value == element.symbol) {
+                setTableElement(<Element name={element.name} symbol={element.symbol} state={element.standardState} number={element.atomicNumber} mass={element.atomicMass} radius={element.atomicRadius} discovered={element.yearDiscovered} density={element.density} groupBlock={element.groupBlock} />);
                 return;
             }
         });
     }
 
     const capatalize = (word) => {
-        return word.charAt(0).toUpperCase() + word.slice(1);
+        return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
     }
 
     useEffect(() => {
         fetch('https://neelpatel05.pythonanywhere.com/')
-        .then(response => response.json())
-        .then(setData);
+            .then(response => response.json())
+            .then(setData);
     }, []);
 
     return (
@@ -39,16 +43,16 @@ function PeriodicTable() {
                     <article>
                         <h2>Tabela Periódica</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis aut eius voluptas et, rem corrupti. Sed nam, sint nemo itaque, inventore aperiam cum laborum, autem doloribus repellat cupiditate earum nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo modi praesentium! Recusandae magni ex voluptate reiciendis, repudiandae, enim, mollitia esse quasi doloribus perspiciatis molestias ut delectus libero dignissimos quos!</p>
-                    </article>  
+                    </article>
                 </div>
                 <section className={style.search}>
                     <h2>Busque por elementos da tabela periódica</h2>
                     <form className={style.searchContainer} onSubmit={fetchElement}>
-                        <input type="search" id={style.searchElements} placeholder='Busque por um elemento' ref={input} />
+                        <input type="search" id={style.searchElements} placeholder='Busque por um elemento' ref={input} autoComplete='off' />
                         <button><FiSearch /></button>
                     </form>
                     <div className={style.elementArea} ref={elementArea} >
-                        <Element />
+                        {tableElement}
                     </div>
                 </section>
             </main>
