@@ -33,6 +33,55 @@
     font-family: var(--main-font);
 }
 
+.search {
+    margin-top: 50px;
+}
+
+.search h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search #searchElements {
+    height: 10px;
+    padding: 17px;
+    width: 75%;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    font-family: var(--main-font);
+
+    color: black;
+    outline: none;
+}
+
+.search #searchElements::placeholder {
+    font-weight: bold;
+}
+
+.search button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+
+    background-color: var(--color1);
+    font-size: 1.5em;
+    
+    cursor: pointer;
+}
+
+.elementArea {
+    margin: auto;
+    margin-top: 30px;
+    width: 77%;
+}
+
 @media (max-width: 1028px) {
     .container {
         flex-direction: column;
