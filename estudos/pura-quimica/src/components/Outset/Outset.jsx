@@ -13,8 +13,8 @@ function Outset() {
                 </picture>
                 <article>
                     <h2>Sobre nós:</h2>
-                    <p>Aqui você faz todos os seus experimentos químicos com segurança, com mais de 50 anos colaborando para as melhores experiências dos nossos usuários, somos especialista em tonar sua experiência química inesquecível. Contamos com várias ferramentas para acelerar seus experimentos e garantir sua segurança.</p>
-                    <Link to="/lab" >Ir para o laboratório</Link>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, esse neque culpa fugit quod velit vero inventore asperiores, aspernatur illum non sit, quasi molestias id ipsum. Necessitatibus amet sint perspiciatis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, sequi laboriosam nam ipsum odit voluptates consequatur repellat hic facere fuga!</p>
+                    <Link to="/lab" onClick={() => scrollTop = 0} >Ir para o laboratório</Link>
                 </article>
             </section>
         </main>

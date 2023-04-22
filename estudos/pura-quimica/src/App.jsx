@@ -1,4 +1,3 @@
-import Home from './pages/Home/Home'
 import Router from './router/Router'
 import './App.css'
 

@@ -1,7 +1,6 @@
 @import '../../App.css';
 
 .center {
-    max-width: 1000px;
     min-height: 100vh;
     margin: auto;
 

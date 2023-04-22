@@ -44,7 +44,7 @@ function Presentation() {
                 <article>
                     <h1>Laboratório <GiSoapExperiment /></h1>
                     <div className={style.container}>
-                        <p>Faça seus experimentos no conforto de sua casa. Desfrute ao máximo de nossas ferramentas !</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam nisi qui incidunt beatae dolore debitis vitae deleniti laudantium optio? Amet asperiores consectetur rerum quas tempore suscipit, expedita vitae vero facilis.</p>
                         <p className={style.timer}>Você está aqui á {`${styleNumber(hours)}:${styleNumber(min)}:${styleNumber(sec)}`}</p>
                     </div>
                 </article>

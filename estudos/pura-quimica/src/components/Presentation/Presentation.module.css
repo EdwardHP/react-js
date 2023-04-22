@@ -11,12 +11,14 @@
 .presentation h1 {
     font-size: 3.5em;
     margin-bottom: 20px;
+    letter-spacing: 4px;
 }
 
 .presentation p {
     max-width: 600px;
     font-family: var(--main-font);
     font-size: 1.25em;
+    text-align: justify;
 }
 
 .presentation img {
