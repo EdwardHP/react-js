@@ -1,0 +1,81 @@
+@import '../../../App.css';
+
+.search {
+    margin-top: 50px;
+}
+
+.search h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search #searchElements {
+    height: 10px;
+    padding: 17px;
+    width: 75%;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    font-family: var(--main-font);
+
+    color: black;
+    outline: none;
+}
+
+.search #searchElements::placeholder {
+    font-weight: bold;
+}
+
+.search button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+
+    background-color: var(--color1);
+    font-size: 1.5em;
+    
+    cursor: pointer;
+}
+
+.elementsArea {
+    margin: auto;
+    margin-top: 30px;
+    width: 77%;
+    min-height: 80px;
+    border-radius: 8px;
+
+    background-color: var(--color1);
+}
+
+.elementsArea h3 {
+    padding: 4px 0px;
+    font-size: 2em;
+    text-align: center;
+
+    color: var(--color4);
+    border-bottom: 1px solid var(--color4);
+}
+
+.elementsArea span {
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 1.75em;
+    border-radius: 10px;
+
+    background-color: var(--color2);
+    box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.elementsArea div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 10px;
+    justify-content: center;
+}
+

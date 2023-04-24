@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { FiSearch } from 'react-icons/fi'
 import React from 'react'
+import FetchElements from './FetchElements/FetchElements'
 import Element from '../Element/Element'
 import style from './PeriodicTable.module.css'
 
@@ -32,7 +33,11 @@ function PeriodicTable() {
     useEffect(() => {
         fetch('https://neelpatel05.pythonanywhere.com/')
             .then(response => response.json())
-            .then(setData);
+            .then(data => {
+                setData(data);
+
+                setTableElement(<Element name={data[0].name} symbol={data[0].symbol} state={data[0].standardState} number={data[0].atomicNumber} mass={data[0].atomicMass} radius={data[0].atomicRadius} discovered={data[0].yearDiscovered} density={data[0].density} groupBlock={data[0].groupBlock} />);
+            });
     }, []);
 
     return (
@@ -49,12 +54,15 @@ function PeriodicTable() {
                     <h2>Busque por elementos da tabela periódica</h2>
                     <form className={style.searchContainer} onSubmit={fetchElement}>
                         <input type="search" id={style.searchElements} placeholder='Busque por um elemento' ref={input} autoComplete='off' />
-                        <button><FiSearch /></button>
+                        <button ><FiSearch /></button>
                     </form>
                     <div className={style.elementArea} ref={elementArea} >
                         {tableElement}
                     </div>
                 </section>
+
+                <FetchElements data={data} />
+
             </main>
         </section>
     )
