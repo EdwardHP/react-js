@@ -2,6 +2,7 @@ import React from 'react'
 import { useRef } from 'react';
 import { FiSearch } from 'react-icons/fi'
 import style from './FetchElements.module.css'
+import SearchTab from '../../SearchTab/SearchTab';
 
 function FetchElements(props) {
 
@@ -37,25 +38,19 @@ function FetchElements(props) {
                     wordValue += word.charAt(index);
             }
         else
-        for (let index = 0; index < word.length; index++) {
-            if (index % 2 != 0)
-                wordValue += word.charAt(index).toUpperCase();
-            else
-                wordValue += word.charAt(index);
-        }
+            for (let index = 0; index < word.length; index++) {
+                if (index % 2 != 0)
+                    wordValue += word.charAt(index).toUpperCase();
+                else
+                    wordValue += word.charAt(index);
+            }
 
         return wordValue;
     };
 
     return (
         <section>
-            <section className={style.search}>
-                <h2>Busque por elementos de uma frase</h2>
-                <form className={style.searchContainer} onSubmit={fetchElementsByLetters} >
-                    <input type="search" id={style.searchElements} placeholder='Digite o que quiser' autoComplete='off' ref={input} />
-                    <button><FiSearch /></button>
-                </form>
-            </section>
+            <SearchTab reference={input} title='Busque por elementos de uma frase' placeholder='Digite o que quiser' onSubmit={fetchElementsByLetters} />
             <div className={style.elementsArea} >
                 <h3>Resultados</h3>
                 <div ref={elementsList}>

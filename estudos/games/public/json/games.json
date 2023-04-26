@@ -1,0 +1,68 @@
+{
+    "games": [
+        {
+            "id": 1,
+            "name": "Deathloop",
+            "category": "First-person shooter",
+            "description": "A time-looping first-person shooter game in which the player takes on the role of Colt, an assassin trapped in a time loop on the island of Blackreef. Colt must eliminate eight targets in a single day to break the loop and escape the island, while being pursued by rival assassin Julianna.",
+            "release_date": "September 14, 2021",
+            "poster": "https://images5.alphacoders.com/127/1274579.jpg"
+        },
+        {
+            "id": 2,
+            "name": "The Legend of Zelda: Breath of the Wild",
+            "category": "Action-Adventure",
+            "description": "Open-world action-adventure game in which the player controls Link as he explores the land of Hyrule, solving puzzles and battling enemies to defeat the evil Calamity Ganon.",
+            "release_date": "March 3, 2017",
+            "poster": "https://images6.alphacoders.com/805/805656.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Minecraft",
+            "category": "Sandbox",
+            "description": "Sandbox game in which the player can build and explore blocky 3D worlds, gathering resources and crafting tools and structures.",
+            "release_date": "November 18, 2011",
+            "poster": "https://images3.alphacoders.com/118/1184187.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Fortnite",
+            "category": "Battle Royale",
+            "description": "Multiplayer battle royale game in which 100 players fight to be the last one standing on an island, gathering weapons and building structures to gain an advantage.",
+            "release_date": "July 25, 2017",
+            "poster": "https://images8.alphacoders.com/877/877849.jpg"
+        },
+        {
+            "id": 5,
+            "name": "League of Legends",
+            "category": "MOBA",
+            "description": "Multiplayer online battle arena game in which two teams of players compete to destroy each other's base while defending their own, using a variety of champions with unique abilities.",
+            "release_date": "October 27, 2009",
+            "poster": "https://images4.alphacoders.com/600/600528.png"
+        },
+        {
+            "id": 6,
+            "name": "Grand Theft Auto V",
+            "category": "Action",
+            "description": "Action game in which the player can explore an open world, complete missions, and engage in various activities such as driving, shooting, and heists.",
+            "release_date": "September 17, 2013",
+            "poster": "https://images7.alphacoders.com/439/439636.jpg"
+        },
+        {
+            "id": 7,
+            "name": "FIFA 22",
+            "category": "Sports",
+            "description": "Sports simulation game in which the player can control a team and compete in various soccer matches and tournaments.",
+            "release_date": "October 1, 2021",
+            "poster": "https://images6.alphacoders.com/115/1157073.png"
+        },
+        {
+            "id": 8,
+            "name": "Among Us",
+            "category": "Social Deduction",
+            "description": "Online multiplayer game in which players work together on a spaceship, but some are secretly impostors trying to sabotage and kill the others, while the crew tries to identify and vote off the impostors.",
+            "release_date": "June 15, 2018",
+            "poster": "https://images2.alphacoders.com/129/1290012.jpg"
+        }
+    ]
+}

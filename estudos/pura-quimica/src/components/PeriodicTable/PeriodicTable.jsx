@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from 'react'
-import { FiSearch } from 'react-icons/fi'
 import React from 'react'
 import FetchElements from './FetchElements/FetchElements'
 import Element from '../Element/Element'
 import style from './PeriodicTable.module.css'
+import SearchTab from '../SearchTab/SearchTab'
 
 function PeriodicTable() {
 
@@ -50,16 +50,12 @@ function PeriodicTable() {
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis aut eius voluptas et, rem corrupti. Sed nam, sint nemo itaque, inventore aperiam cum laborum, autem doloribus repellat cupiditate earum nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo modi praesentium! Recusandae magni ex voluptate reiciendis, repudiandae, enim, mollitia esse quasi doloribus perspiciatis molestias ut delectus libero dignissimos quos!</p>
                     </article>
                 </div>
-                <section className={style.search}>
-                    <h2>Busque por elementos da tabela periódica</h2>
-                    <form className={style.searchContainer} onSubmit={fetchElement}>
-                        <input type="search" id={style.searchElements} placeholder='Busque por um elemento' ref={input} autoComplete='off' />
-                        <button ><FiSearch /></button>
-                    </form>
-                    <div className={style.elementArea} ref={elementArea} >
-                        {tableElement}
-                    </div>
-                </section>
+
+                <SearchTab reference={input} title='Busque por elementos da tabela periódica' placeholder='Digite o que quiser' onSubmit={fetchElement} />
+
+                <div className={style.elementArea} ref={elementArea} >
+                    {tableElement}
+                </div>
 
                 <FetchElements data={data} />
 
