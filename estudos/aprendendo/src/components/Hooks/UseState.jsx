@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import studyStyle from '../studyStyle.module.css'
 
 function UseState() {

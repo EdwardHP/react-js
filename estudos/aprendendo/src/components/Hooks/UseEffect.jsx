@@ -19,7 +19,6 @@ function UseEffect() {
 
     //Tipos de useEffect
 
-
     useEffect(() => {
         console.log('Vou aparecer sempre que renderizar');
         p1.current.style.display = 'block';
@@ -50,19 +49,19 @@ function UseEffect() {
 
             <div className={studyStyle.exampleBox} style={{ marginBottom: '0px' }}>
                 <h2 style={{ marginBottom: '10px' }} >Exemplo:</h2>
-                <p>Nesse exemplo usamos 3 useEffect:
-                    <ul style={{ marginLeft: '18px' }} >
-                        <li style={{ padding: '5px', backgroundColor: '#ff8b1f', borderRadius: '6px', maxWidth: '350px', margin: '10px 0px', color: 'white', fontWeight: 'bold', boxShadow: '2px 2px 3px #00000045'}} >
-                            p1: sem segundo pârametro;
-                        </li>
-                        <li style={{ padding: '5px', backgroundColor: '#df02fc', borderRadius: '6px', maxWidth: '350px', marginBottom: '10px', color: 'white', fontWeight: 'bold', boxShadow: '2px 2px 3px #00000045'}}>
-                            p2: com segundo pârametro vázio;
-                        </li>
-                        <li style={{ padding: '5px', backgroundColor: '#fc0262', borderRadius: '6px', maxWidth: '350px', marginBottom: '10px', color: 'white', fontWeight: 'bold', boxShadow: '2px 2px 3px #00000045'}}>
-                            p3: segundo pârametro com a variável count.
-                        </li>
-                    </ul>
-                </p>
+                <h3>Nesse exemplo usamos 3 useEffect:</h3>
+                <ul style={{ marginLeft: '18px' }} >
+                    <li style={{ padding: '5px', backgroundColor: '#ff8b1f', borderRadius: '6px', maxWidth: '350px', margin: '10px 0px', color: 'white', fontWeight: 'bold', boxShadow: '2px 2px 3px #00000045' }} >
+                        p1: sem segundo pârametro;
+                    </li>
+                    <li style={{ padding: '5px', backgroundColor: '#df02fc', borderRadius: '6px', maxWidth: '350px', marginBottom: '10px', color: 'white', fontWeight: 'bold', boxShadow: '2px 2px 3px #00000045' }}>
+                        p2: com segundo pârametro vázio;
+                    </li>
+                    <li style={{ padding: '5px', backgroundColor: '#fc0262', borderRadius: '6px', maxWidth: '350px', marginBottom: '10px', color: 'white', fontWeight: 'bold', boxShadow: '2px 2px 3px #00000045' }}>
+                        p3: segundo pârametro com a variável count.
+                    </li>
+                </ul>
+
 
                 <h2 className={studyStyle.title2}>Com a variável count</h2>
                 <span style={{ display: 'block', textAlign: 'center', fontSize: '3em', marginBottom: '10px' }} >{count}</span>
@@ -72,13 +71,13 @@ function UseEffect() {
                 <button className={studyStyle.commomButton} onClick={() => setCountB(countB + 1)}>interagir</button>
                 <div>
                     <h3 style={{ marginBottom: '10px' }}>Resultados:</h3>
-                    <p style={{ display: 'none', padding: '5px', backgroundColor: '#ff8b1f', borderRadius: '6px', maxWidth: '150px', textAlign: 'center', marginBottom: '10px', color: 'white', fontWeight: 'bold', boxShadow: '2px 2px 3px #00000045'}} ref={p1}>
+                    <p style={{ display: 'none', padding: '5px', backgroundColor: '#ff8b1f', borderRadius: '6px', maxWidth: '150px', textAlign: 'center', marginBottom: '10px', color: 'white', fontWeight: 'bold', boxShadow: '2px 2px 3px #00000045' }} ref={p1}>
                         p1: renderizado
                     </p>
-                    <p style={{ display: 'none', padding: '5px', backgroundColor: '#df02fc', borderRadius: '6px', maxWidth: '150px', textAlign: 'center', marginBottom: '10px', color: 'white', fontWeight: 'bold', boxShadow: '2px 2px 3px #00000045'}} ref={p2}>
+                    <p style={{ display: 'none', padding: '5px', backgroundColor: '#df02fc', borderRadius: '6px', maxWidth: '150px', textAlign: 'center', marginBottom: '10px', color: 'white', fontWeight: 'bold', boxShadow: '2px 2px 3px #00000045' }} ref={p2}>
                         p2: renderizado
                     </p>
-                    <p style={{ display: 'none', padding: '5px', backgroundColor: '#fc0262', borderRadius: '6px', maxWidth: '150px', textAlign: 'center', marginBottom: '10px', color: 'white', fontWeight: 'bold', boxShadow: '2px 2px 3px #00000045'}} ref={p3}>
+                    <p style={{ display: 'none', padding: '5px', backgroundColor: '#fc0262', borderRadius: '6px', maxWidth: '150px', textAlign: 'center', marginBottom: '10px', color: 'white', fontWeight: 'bold', boxShadow: '2px 2px 3px #00000045' }} ref={p3}>
                         p3: renderizado
                     </p>
                 </div>
