@@ -6,3 +6,7 @@
 
     background-color: var(--white);
 }
+
+.aboutGame p {
+    text-align: justify;
+}

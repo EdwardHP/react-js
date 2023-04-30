@@ -42,9 +42,9 @@ function MainHeader() {
                 <h1><Link to='/' >Portal Games</Link></h1>
                 <AiOutlineMenu onClick={menuController} className='menu' />
                 <ul ref={nav} className='menu' >
-                    <li><Link to='#' >Lançamentos</Link></li>
-                    <li><Link to='#' >Comunidade</Link></li>
-                    <li><Link to='#' >Suporte</Link></li>
+                    <li><Link to='#' className='menu' >Lançamentos</Link></li>
+                    <li><Link to='#' className='menu' >Comunidade</Link></li>
+                    <li><Link to='#' className='menu' >Suporte</Link></li>
                 </ul>
             </header>
         </section>
