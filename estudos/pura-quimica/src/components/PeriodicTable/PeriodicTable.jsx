@@ -51,7 +51,7 @@ function PeriodicTable() {
                     </article>
                 </div>
 
-                <SearchTab reference={input} title='Busque por elementos da tabela periódica' placeholder='Digite o que quiser' onSubmit={fetchElement} />
+                <SearchTab reference={input} title='Busque por elementos da tabela periódica' placeholder='Busque por um elemento' onSubmit={fetchElement} />
 
                 <div className={style.elementArea} ref={elementArea} >
                     {tableElement}
